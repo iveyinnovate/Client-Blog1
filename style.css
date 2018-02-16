@@ -1,0 +1,120 @@
+body {
+  font-family: 'Libre Baskerville', Arial;
+  padding: 20px;
+  background-image: url(images/background-content.png);
+  background-repeat: repeat;
+  list-style-type: none;
+  background-origin: content-box;
+  background-color: #cccccc;
+  
+  }
+
+  .main-container {
+    max-width: 1200px;
+  }
+
+
+.header {
+  padding: 30px;
+  font-size: 55px;
+  text-align: center;
+  background: white;
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-weight: normal;
+}
+
+.h2 {
+  font-family: 'Sniglet', Arial;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 75%;
+  }
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+.moneyimg {
+  width: 60%;
+  height: 300px;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  display: block, center;
+  float:left;
+  overflow: hidden;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+ul {
+    position: fixed; /* Make it stick, even on scroll */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    bottom: 0%;
+    right: -75%;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 53%; /* Full height */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+   }
+
+.button {
+    display: block;
+    width: 215px;
+    height: auto;
+    border-radius: 2px;
+    padding: 28px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #A9A9A9;
+    color: #000000;
+    border: 3px solid #ffffff;
+   }
+
+.glassesimg {
+    background-image: url(images/glasses.jpg);    
+    margin: 0 5px 0 0;
+    width: 60%;
+    height: 300px;
+    padding: 10px;
+    display: block, center;
+    float:left;
+    overflow: hidden;	
+   }
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+

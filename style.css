@@ -6,6 +6,7 @@ body {
   list-style-type: none;
   background-origin: content-box;
   background-color: #cccccc;
+
   
   }
 
@@ -28,15 +29,13 @@ body {
 }
 
 
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .leftcolumn { 
   float: left;
-  width: 75%;
+  width: 100%;
+  padding-top: 50px;
   }
 
-/* Right column */
+
 .rightcolumn {
   float: left;
   width: 25%;
@@ -55,14 +54,13 @@ body {
 }
 
 
-/* Add a card effect for articles */
+
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -70,19 +68,30 @@ body {
 }
 
 
-
 ul {
-    position: fixed; /* Make it stick, even on scroll */
     list-style-type: none;
     margin: 0;
     padding: 0;
-    bottom: 0%;
-    right: -75%;
-    width: 100%;
-    background-color: #f1f1f1;
-    height: 53%; /* Full height */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-   }
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+
 
 .button {
     display: block;
@@ -97,7 +106,7 @@ ul {
     border: 3px solid #ffffff;
    }
 
-.glassesimg {
+  .playgroundimg {
     background-image: url(images/glasses.jpg);    
     margin: 0 5px 0 0;
     width: 60%;
@@ -108,13 +117,18 @@ ul {
     overflow: hidden;	
    }
 
+p {
+  font-weight: 100px;
+}
 
 /* Footer */
-.footer {
+.footer h2 {
   padding: 20px;
   text-align: center;
   background: #ddd;
   margin-top: 20px;
 }
 
-
+.footer h3{
+  text-align: right;
+}
